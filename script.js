@@ -9,12 +9,6 @@ const magic = new Magic('YOUR_PUBLISHABLE_API_KEY', {
     chainId: 11155111,
   },
 });
-
-let provider;
-let signer;
-let contract;
-
-
 let provider;
 let signer;
 let contract;
