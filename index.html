@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Llanelli DAO</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Llanelli DAO</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/magic-sdk/dist/magic-sdk.umd.min.js"></script>
 </head>
 <body>
+  <h1>Llanelli DAO</h1>
 
-    <h1>Llanelli DAO</h1>
-
-    <button onclick="connectWallet()">Connect Wallet</button>
+  <div id="auth">
+    <h2>Login with Email</h2>
+    <input type="email" id="userEmail" placeholder="Enter your email">
+    <button onclick="loginWithMagic()">Login</button>
     <p id="walletAddress">Not connected</p>
+  </div>
 
-    <hr>
+  <hr>
 
+  <div id="actions">
     <h2>Join the DAO</h2>
     <button onclick="joinDAO()">Join</button>
-
-    <hr>
 
     <h2>Create a Proposal</h2>
     <input type="text" id="proposalDesc" placeholder="Proposal Description">
     <input type="text" id="proposalAmount" placeholder="Amount (in ETH)">
     <button onclick="createProposal()">Create Proposal</button>
 
-    <hr>
-
     <h2>Vote on a Proposal</h2>
     <input type="number" id="voteProposalId" placeholder="Proposal ID">
     <button onclick="voteProposal()">Vote</button>
 
-    <hr>
-
     <h2>Fund the DAO</h2>
     <button onclick="fundDAO()">Fund (0.1 ETH)</button>
+  </div>
 
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
-
-
