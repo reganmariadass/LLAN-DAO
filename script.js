@@ -3,7 +3,7 @@ const contractABI = [ ];
 import { Magic } from 'magic-sdk';
 import { ethers } from 'ethers';
 
-const magic = new Magic('pk_live_6CCE50694B6D38EC', {
+const magic = new Magic(pk_live_6CCE50694B6D38EC), {
   network: {
     rpcUrl: 'https://rpc.sepolia.org', // Use Sepolia Testnet
     chainId: 11155111,
