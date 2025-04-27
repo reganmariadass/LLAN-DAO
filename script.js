@@ -1,5 +1,19 @@
 const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 const contractABI = [ ];
+import { Magic } from 'magic-sdk';
+import { ethers } from 'ethers';
+
+const magic = new Magic('YOUR_PUBLISHABLE_API_KEY', {
+  network: {
+    rpcUrl: 'https://rpc.sepolia.org', // Use Sepolia Testnet
+    chainId: 11155111,
+  },
+});
+
+let provider;
+let signer;
+let contract;
+
 
 let provider;
 let signer;
